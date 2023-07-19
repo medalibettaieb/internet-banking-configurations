@@ -1,16 +1,13 @@
 spring:
   datasource:
+    driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/banking_core_service
     username: root
     password: example
-    driverClassName: com.mysql.jdbc.Driver
   jpa:
     hibernate.ddl-auto: update
-    generate-ddl: false
-    show-sql: false
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    show-sql: true
 
 
 server:
